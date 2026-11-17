@@ -1,0 +1,13 @@
+{
+  "name": "pixel-office",
+  "version": "1.0.0",
+  "description": "A retro pixel office that shows what Claude Code is doing, live.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "demo": "node scripts/demo.js",
+    "install-hooks": "node install-hooks.js",
+    "uninstall-hooks": "node install-hooks.js --uninstall"
+  }
+}

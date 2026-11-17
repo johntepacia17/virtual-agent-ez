@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Office</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1><span class="logo"></span>PIXEL OFFICE</h1>
+    <nav id="tabs" class="tabs" aria-label="Sessions"></nav>
+    <div class="status">
+      <span class="clockbox"><span id="clock">--:--:--</span> <small id="tz"></small></span>
+      <span id="phase" class="pill">…</span>
+      <span id="conn" class="conn" title="Connecting…"></span>
+    </div>
+  </header>
+  <main class="layout">
+    <section id="stage" class="stage">
+      <canvas id="screen" aria-label="Pixel office scene"></canvas>
+    </section>
+    <aside class="side">
+      <div class="panel">
+        <h2>CATS</h2>
+        <div class="tools" role="group" aria-label="Cat tools">
+          <button data-tool="pet">PET</button>
+          <button data-tool="feed">FEED</button>
+          <button data-tool="toy">TOY</button>
+        </div>
+        <p id="toolhint" class="hint"></p>
+        <ul id="roster" class="roster"></ul>
+      </div>
+      <div class="panel grow">
+        <h2>ACTIVITY</h2>
+        <ul id="log" class="log"></ul>
+      </div>
+    </aside>
+  </main>
+  <script src="sprites.js"></script>
+  <script src="cats.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
